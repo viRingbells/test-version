@@ -1,6 +1,6 @@
 {
   "name": "test-version",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Test if a version matches the given versions",
   "main": "index.js",
   "engines": {
