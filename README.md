@@ -23,7 +23,7 @@ else {
 }
 ```
 
-### Patters
+### Patterns
 
 version can be like:
 
