@@ -88,7 +88,7 @@ function test_range (version) {
     };
 }
 
-const desc_pattern = ['~', '\\^', '>=?', '<=?', '=', '\\!'];
+const desc_pattern = ['~', '\\^', '>=?', '<=?', '\\!=?','='];
 const desc_regexp  = new RegExp("^\\s*((?:" + desc_pattern.join(")|(?:") + "))(.*?\\d+.*?)$");
 function test_desc (version) {
     debug('TestVersion: test desc of ' + version);
@@ -112,7 +112,7 @@ function match (v1, v2, desc) {
         return true;
     }
     if (result > 0) {
-        if (desc === '>=' || desc === '>' || desc === '!') {
+        if (desc === '>=' || desc === '>' || desc === '!' || desc === '!=') {
             debug('TestVeresion: matched!');
             return true;
         }
@@ -125,7 +125,7 @@ function match (v1, v2, desc) {
             return true;
         }
     }
-    if (result < 0 && (desc === '<=' || desc === '<' || desc === '!')) {
+    if (result < 0 && (desc === '<=' || desc === '<' || desc === '!' || desc === '!=')) {
         debug('TestVeresion: matched!');
         return true;
     }
