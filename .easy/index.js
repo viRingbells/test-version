@@ -45,7 +45,7 @@ function test_version(version, target) {
 }
 
 var match_chars = ['*', 'x'];
-var match_pattern = ['\\d', '\\*', 'x'];
+var match_pattern = ['\\d+', '\\*', 'x'];
 var match_regexp = new RegExp("((?:" + match_pattern.join(")|(?:") + "))", 'g');
 function parse(version) {
     debug("TestVersion: parsing " + version);

@@ -32,6 +32,7 @@ console.log(chalk.blue('  Testing v0.9.0 with >v1.0.0  result is ' + !!test('v0.
 console.log(chalk.blue('  Testing v1.0.0 with >v1.0.0  result is ' + !!test('v1.0.0', '>v1.0.0')));
 console.log(chalk.blue('  Testing v1.0.2 with >v1.0.0  result is ' + !!test('v1.0.2', '>v1.0.0')));
 console.log(chalk.blue('  Testing v1.4.2 with >v1.0.0  result is ' + !!test('v1.4.2', '>v1.0.0')));
+console.log(chalk.blue('  Testing v1.10.2 with >v1.4.0  result is ' + !!test('v1.10.2', '>v1.4.0')));
 console.log(chalk.blue('  Testing v0.9.0 with >=v1.0.0  result is ' + !!test('v0.9.0', '>=v1.0.0')));
 console.log(chalk.blue('  Testing v1.0.0 with >=v1.0.0  result is ' + !!test('v1.0.0', '>=v1.0.0')));
 console.log(chalk.blue('  Testing v1.0.2 with >=v1.0.0  result is ' + !!test('v1.0.2', '>=v1.0.0')));
